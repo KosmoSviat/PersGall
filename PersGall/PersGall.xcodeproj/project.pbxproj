@@ -7,23 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641E19232B7DE4C80041DFA3 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641E19222B7DE4C80041DFA3 /* Builder.swift */; };
+		641E19272B7DE9D40041DFA3 /* PasscodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641E19262B7DE9D40041DFA3 /* PasscodePresenter.swift */; };
 		644E5C142B7DDA3600AD4868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E5C132B7DDA3600AD4868 /* AppDelegate.swift */; };
 		644E5C162B7DDA3600AD4868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E5C152B7DDA3600AD4868 /* SceneDelegate.swift */; };
-		644E5C182B7DDA3600AD4868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E5C172B7DDA3600AD4868 /* ViewController.swift */; };
-		644E5C1B2B7DDA3600AD4868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644E5C192B7DDA3600AD4868 /* Main.storyboard */; };
+		644E5C182B7DDA3600AD4868 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644E5C172B7DDA3600AD4868 /* PasscodeView.swift */; };
 		644E5C1D2B7DDA3700AD4868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644E5C1C2B7DDA3700AD4868 /* Assets.xcassets */; };
 		644E5C202B7DDA3700AD4868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644E5C1E2B7DDA3700AD4868 /* LaunchScreen.storyboard */; };
+		646A84152B846989007F2032 /* StringProtocol + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A84142B846989007F2032 /* StringProtocol + ex.swift */; };
+		64787F3F2B8325CE004A934A /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64787F3E2B8325CE004A934A /* KeychainManager.swift */; };
+		64787F422B832654004A934A /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 64787F412B832654004A934A /* KeychainAccess */; };
+		648A29ED2B7F2978006F534B /* UIView + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A29EC2B7F2978006F534B /* UIView + ex.swift */; };
+		648A29EF2B7F374C006F534B /* UIStackView + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A29EE2B7F374C006F534B /* UIStackView + ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641E19222B7DE4C80041DFA3 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		641E19262B7DE9D40041DFA3 /* PasscodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodePresenter.swift; sourceTree = "<group>"; };
 		644E5C102B7DDA3600AD4868 /* PersGall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersGall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		644E5C132B7DDA3600AD4868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		644E5C152B7DDA3600AD4868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		644E5C172B7DDA3600AD4868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		644E5C1A2B7DDA3600AD4868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		644E5C172B7DDA3600AD4868 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		644E5C1C2B7DDA3700AD4868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		644E5C1F2B7DDA3700AD4868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		644E5C212B7DDA3700AD4868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646A84142B846989007F2032 /* StringProtocol + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol + ex.swift"; sourceTree = "<group>"; };
+		64787F3E2B8325CE004A934A /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		648A29EC2B7F2978006F534B /* UIView + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ex.swift"; sourceTree = "<group>"; };
+		648A29EE2B7F374C006F534B /* UIStackView + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +42,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64787F422B832654004A934A /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641E191C2B7DE3B10041DFA3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				641E191D2B7DE3BA0041DFA3 /* PasscodeModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		641E191D2B7DE3BA0041DFA3 /* PasscodeModule */ = {
+			isa = PBXGroup;
+			children = (
+				641E191E2B7DE3DD0041DFA3 /* Model */,
+				641E191F2B7DE3E30041DFA3 /* View */,
+				641E19202B7DE44D0041DFA3 /* Presenter */,
+			);
+			path = PasscodeModule;
+			sourceTree = "<group>";
+		};
+		641E191E2B7DE3DD0041DFA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		641E191F2B7DE3E30041DFA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				644E5C172B7DDA3600AD4868 /* PasscodeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		641E19202B7DE44D0041DFA3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				641E19262B7DE9D40041DFA3 /* PasscodePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		641E19212B7DE4850041DFA3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				641E19222B7DE4C80041DFA3 /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		641E19242B7DE62E0041DFA3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				644E5C132B7DDA3600AD4868 /* AppDelegate.swift */,
+				644E5C152B7DDA3600AD4868 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		641E19252B7DE68C0041DFA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				644E5C1C2B7DDA3700AD4868 /* Assets.xcassets */,
+				644E5C1E2B7DDA3700AD4868 /* LaunchScreen.storyboard */,
+				644E5C212B7DDA3700AD4868 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		644E5C072B7DDA3600AD4868 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +136,32 @@
 		644E5C122B7DDA3600AD4868 /* PersGall */ = {
 			isa = PBXGroup;
 			children = (
-				644E5C132B7DDA3600AD4868 /* AppDelegate.swift */,
-				644E5C152B7DDA3600AD4868 /* SceneDelegate.swift */,
-				644E5C172B7DDA3600AD4868 /* ViewController.swift */,
-				644E5C192B7DDA3600AD4868 /* Main.storyboard */,
-				644E5C1C2B7DDA3700AD4868 /* Assets.xcassets */,
-				644E5C1E2B7DDA3700AD4868 /* LaunchScreen.storyboard */,
-				644E5C212B7DDA3700AD4868 /* Info.plist */,
+				641E19242B7DE62E0041DFA3 /* Application */,
+				64787F3D2B8325C0004A934A /* KeychainManager */,
+				641E19212B7DE4850041DFA3 /* Builder */,
+				641E191C2B7DE3B10041DFA3 /* Module */,
+				648A29EB2B7F2951006F534B /* Extensions */,
+				641E19252B7DE68C0041DFA3 /* Resources */,
 			);
 			path = PersGall;
+			sourceTree = "<group>";
+		};
+		64787F3D2B8325C0004A934A /* KeychainManager */ = {
+			isa = PBXGroup;
+			children = (
+				64787F3E2B8325CE004A934A /* KeychainManager.swift */,
+			);
+			path = KeychainManager;
+			sourceTree = "<group>";
+		};
+		648A29EB2B7F2951006F534B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				648A29EC2B7F2978006F534B /* UIView + ex.swift */,
+				648A29EE2B7F374C006F534B /* UIStackView + ex.swift */,
+				646A84142B846989007F2032 /* StringProtocol + ex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +180,9 @@
 			dependencies = (
 			);
 			name = PersGall;
+			packageProductDependencies = (
+				64787F412B832654004A934A /* KeychainAccess */,
+			);
 			productName = PersGall;
 			productReference = 644E5C102B7DDA3600AD4868 /* PersGall.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 644E5C072B7DDA3600AD4868;
+			packageReferences = (
+				64787F402B832654004A934A /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 644E5C112B7DDA3600AD4868 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +230,6 @@
 			files = (
 				644E5C202B7DDA3700AD4868 /* LaunchScreen.storyboard in Resources */,
 				644E5C1D2B7DDA3700AD4868 /* Assets.xcassets in Resources */,
-				644E5C1B2B7DDA3600AD4868 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				644E5C182B7DDA3600AD4868 /* ViewController.swift in Sources */,
+				644E5C182B7DDA3600AD4868 /* PasscodeView.swift in Sources */,
+				648A29ED2B7F2978006F534B /* UIView + ex.swift in Sources */,
 				644E5C142B7DDA3600AD4868 /* AppDelegate.swift in Sources */,
 				644E5C162B7DDA3600AD4868 /* SceneDelegate.swift in Sources */,
+				641E19232B7DE4C80041DFA3 /* Builder.swift in Sources */,
+				641E19272B7DE9D40041DFA3 /* PasscodePresenter.swift in Sources */,
+				646A84152B846989007F2032 /* StringProtocol + ex.swift in Sources */,
+				648A29EF2B7F374C006F534B /* UIStackView + ex.swift in Sources */,
+				64787F3F2B8325CE004A934A /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		644E5C192B7DDA3600AD4868 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				644E5C1A2B7DDA3600AD4868 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		644E5C1E2B7DDA3700AD4868 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +394,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MQAY62GC84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersGall/Info.plist;
+				INFOPLIST_FILE = PersGall/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PersGall;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +409,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = KosmoSviat.PersGall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,12 +428,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MQAY62GC84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersGall/Info.plist;
+				INFOPLIST_FILE = PersGall/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PersGall;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +443,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = KosmoSviat.PersGall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64787F402B832654004A934A /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64787F412B832654004A934A /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64787F402B832654004A934A /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 644E5C082B7DDA3600AD4868 /* Project object */;
 }
