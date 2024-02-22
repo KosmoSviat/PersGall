@@ -8,11 +8,11 @@
 import UIKit
 
 extension UIView {
-    static func configure<T: UIView>(view: T, block: @escaping (T) -> ()) -> T {
-        view.translatesAutoresizingMaskIntoConstraints = false
-        block(view)
-        return view
-    }
+//    static func configure<T: UIView>(view: T, block: @escaping (T) -> ()) -> T {
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//        block(view)
+//        return view
+//    }
     
     func addSubviews(_ views: [UIView]) {
         views.forEach { view in

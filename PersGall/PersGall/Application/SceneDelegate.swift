@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SceneDelegateProtocol {
+    func startMainScreen()
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // MARK: - Properties
     var window: UIWindow?
@@ -16,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = Builder.getPasscodeController(passcodeState: checkIsSetPasscode())
+        window?.rootViewController = Builder.createTabBarController()
+        //Builder.getPasscodeController(passcodeState: checkIsSetPasscode(), sceneDelegate: self)
         window?.makeKeyAndVisible()
     }
     
@@ -29,20 +34,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return .setNewPasscode
         }
     }
-
-    func sceneDidDisconnect(_ scene: UIScene) {
-    }
-
-    func sceneDidBecomeActive(_ scene: UIScene) {
-    }
-
-    func sceneWillResignActive(_ scene: UIScene) {
-    }
-
-    func sceneWillEnterForeground(_ scene: UIScene) {
-    }
-
-    func sceneDidEnterBackground(_ scene: UIScene) {
-    }
 }
 
+extension SceneDelegate: SceneDelegateProtocol {
+    func startMainScreen() {
+        self.window?.rootViewController = Builder.createTabBarController()
+    }
+    
+    
+}
