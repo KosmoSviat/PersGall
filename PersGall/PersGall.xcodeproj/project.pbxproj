@@ -21,10 +21,15 @@
 		646A84292B8472B1007F2032 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A84282B8472B1007F2032 /* TabBarView.swift */; };
 		646A842B2B8472DE007F2032 /* TabBarViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A842A2B8472DE007F2032 /* TabBarViewPresenter.swift */; };
 		646A842D2B847A4A007F2032 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A842C2B847A4A007F2032 /* MainScreenPresenter.swift */; };
+		646A842F2B871DC8007F2032 /* MainPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A842E2B871DC8007F2032 /* MainPostCell.swift */; };
+		646A84312B871E22007F2032 /* MainPostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A84302B871E22007F2032 /* MainPostHeader.swift */; };
+		646A84332B87202B007F2032 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A84322B87202B007F2032 /* PostItem.swift */; };
 		64787F3F2B8325CE004A934A /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64787F3E2B8325CE004A934A /* KeychainManager.swift */; };
 		64787F422B832654004A934A /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 64787F412B832654004A934A /* KeychainAccess */; };
 		648A29ED2B7F2978006F534B /* UIView + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A29EC2B7F2978006F534B /* UIView + ex.swift */; };
 		648A29EF2B7F374C006F534B /* UIStackView + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A29EE2B7F374C006F534B /* UIStackView + ex.swift */; };
+		64E2973C2B88B64E00E75639 /* Date + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2973B2B88B64E00E75639 /* Date + ex.swift */; };
+		64E2973E2B88BBFF00E75639 /* UIApplication + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2973D2B88BBFF00E75639 /* UIApplication + ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +49,14 @@
 		646A84282B8472B1007F2032 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		646A842A2B8472DE007F2032 /* TabBarViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewPresenter.swift; sourceTree = "<group>"; };
 		646A842C2B847A4A007F2032 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		646A842E2B871DC8007F2032 /* MainPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostCell.swift; sourceTree = "<group>"; };
+		646A84302B871E22007F2032 /* MainPostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostHeader.swift; sourceTree = "<group>"; };
+		646A84322B87202B007F2032 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
 		64787F3E2B8325CE004A934A /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		648A29EC2B7F2978006F534B /* UIView + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ex.swift"; sourceTree = "<group>"; };
 		648A29EE2B7F374C006F534B /* UIStackView + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + ex.swift"; sourceTree = "<group>"; };
+		64E2973B2B88B64E00E75639 /* Date + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ex.swift"; sourceTree = "<group>"; };
+		64E2973D2B88BBFF00E75639 /* UIApplication + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				646A84202B847222007F2032 /* MainScreenView.swift */,
+				646A842E2B871DC8007F2032 /* MainPostCell.swift */,
+				646A84302B871E22007F2032 /* MainPostHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +228,7 @@
 		646A841C2B847137007F2032 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				646A84322B87202B007F2032 /* PostItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +279,8 @@
 				648A29EC2B7F2978006F534B /* UIView + ex.swift */,
 				648A29EE2B7F374C006F534B /* UIStackView + ex.swift */,
 				646A84142B846989007F2032 /* StringProtocol + ex.swift */,
+				64E2973B2B88B64E00E75639 /* Date + ex.swift */,
+				64E2973D2B88BBFF00E75639 /* UIApplication + ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,14 +361,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646A84332B87202B007F2032 /* PostItem.swift in Sources */,
 				644E5C182B7DDA3600AD4868 /* PasscodeView.swift in Sources */,
+				64E2973C2B88B64E00E75639 /* Date + ex.swift in Sources */,
 				646A84212B847222007F2032 /* MainScreenView.swift in Sources */,
 				646A84292B8472B1007F2032 /* TabBarView.swift in Sources */,
 				648A29ED2B7F2978006F534B /* UIView + ex.swift in Sources */,
 				646A84272B84726D007F2032 /* CameraView.swift in Sources */,
 				644E5C142B7DDA3600AD4868 /* AppDelegate.swift in Sources */,
 				644E5C162B7DDA3600AD4868 /* SceneDelegate.swift in Sources */,
+				64E2973E2B88BBFF00E75639 /* UIApplication + ex.swift in Sources */,
+				646A84312B871E22007F2032 /* MainPostHeader.swift in Sources */,
 				646A842B2B8472DE007F2032 /* TabBarViewPresenter.swift in Sources */,
+				646A842F2B871DC8007F2032 /* MainPostCell.swift in Sources */,
 				646A84252B847260007F2032 /* FavoriteView.swift in Sources */,
 				641E19232B7DE4C80041DFA3 /* Builder.swift in Sources */,
 				641E19272B7DE9D40041DFA3 /* PasscodePresenter.swift in Sources */,
