@@ -24,10 +24,14 @@
 		646A842F2B871DC8007F2032 /* MainPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A842E2B871DC8007F2032 /* MainPostCell.swift */; };
 		646A84312B871E22007F2032 /* MainPostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A84302B871E22007F2032 /* MainPostHeader.swift */; };
 		646A84332B87202B007F2032 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A84322B87202B007F2032 /* PostItem.swift */; };
+		6471166C2B958555004450A7 /* FavoriteViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471166B2B958555004450A7 /* FavoriteViewPresenter.swift */; };
+		6471166E2B9590A0004450A7 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471166D2B9590A0004450A7 /* FavoriteCell.swift */; };
 		64787F3F2B8325CE004A934A /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64787F3E2B8325CE004A934A /* KeychainManager.swift */; };
 		64787F422B832654004A934A /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 64787F412B832654004A934A /* KeychainAccess */; };
 		648A29ED2B7F2978006F534B /* UIView + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A29EC2B7F2978006F534B /* UIView + ex.swift */; };
 		648A29EF2B7F374C006F534B /* UIStackView + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648A29EE2B7F374C006F534B /* UIStackView + ex.swift */; };
+		6496314D2B8EF3D400CFB220 /* TagCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496314C2B8EF3D400CFB220 /* TagCollectionView.swift */; };
+		649631512B8EF80900CFB220 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649631502B8EF80900CFB220 /* TagCollectionCell.swift */; };
 		64E2973C2B88B64E00E75639 /* Date + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2973B2B88B64E00E75639 /* Date + ex.swift */; };
 		64E2973E2B88BBFF00E75639 /* UIApplication + ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2973D2B88BBFF00E75639 /* UIApplication + ex.swift */; };
 /* End PBXBuildFile section */
@@ -52,9 +56,13 @@
 		646A842E2B871DC8007F2032 /* MainPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostCell.swift; sourceTree = "<group>"; };
 		646A84302B871E22007F2032 /* MainPostHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPostHeader.swift; sourceTree = "<group>"; };
 		646A84322B87202B007F2032 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		6471166B2B958555004450A7 /* FavoriteViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewPresenter.swift; sourceTree = "<group>"; };
+		6471166D2B9590A0004450A7 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		64787F3E2B8325CE004A934A /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		648A29EC2B7F2978006F534B /* UIView + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ex.swift"; sourceTree = "<group>"; };
 		648A29EE2B7F374C006F534B /* UIStackView + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + ex.swift"; sourceTree = "<group>"; };
+		6496314C2B8EF3D400CFB220 /* TagCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionView.swift; sourceTree = "<group>"; };
+		649631502B8EF80900CFB220 /* TagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
 		64E2973B2B88B64E00E75639 /* Date + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ex.swift"; sourceTree = "<group>"; };
 		64E2973D2B88BBFF00E75639 /* UIApplication + ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +170,7 @@
 		644E5C122B7DDA3600AD4868 /* PersGall */ = {
 			isa = PBXGroup;
 			children = (
+				6496314A2B8EF3B600CFB220 /* Helpers */,
 				641E19242B7DE62E0041DFA3 /* Application */,
 				64787F3D2B8325C0004A934A /* KeychainManager */,
 				641E19212B7DE4850041DFA3 /* Builder */,
@@ -237,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				646A84232B847254007F2032 /* View */,
+				6471166A2B95851D004450A7 /* Presenter */,
 			);
 			path = FavoriteModule;
 			sourceTree = "<group>";
@@ -261,8 +271,17 @@
 			isa = PBXGroup;
 			children = (
 				646A84242B847260007F2032 /* FavoriteView.swift */,
+				6471166D2B9590A0004450A7 /* FavoriteCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6471166A2B95851D004450A7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6471166B2B958555004450A7 /* FavoriteViewPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		64787F3D2B8325C0004A934A /* KeychainManager */ = {
@@ -283,6 +302,23 @@
 				64E2973D2B88BBFF00E75639 /* UIApplication + ex.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6496314A2B8EF3B600CFB220 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6496314B2B8EF3BD00CFB220 /* TagCollection */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6496314B2B8EF3BD00CFB220 /* TagCollection */ = {
+			isa = PBXGroup;
+			children = (
+				6496314C2B8EF3D400CFB220 /* TagCollectionView.swift */,
+				649631502B8EF80900CFB220 /* TagCollectionCell.swift */,
+			);
+			path = TagCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,8 +402,11 @@
 				64E2973C2B88B64E00E75639 /* Date + ex.swift in Sources */,
 				646A84212B847222007F2032 /* MainScreenView.swift in Sources */,
 				646A84292B8472B1007F2032 /* TabBarView.swift in Sources */,
+				649631512B8EF80900CFB220 /* TagCollectionCell.swift in Sources */,
 				648A29ED2B7F2978006F534B /* UIView + ex.swift in Sources */,
+				6471166C2B958555004450A7 /* FavoriteViewPresenter.swift in Sources */,
 				646A84272B84726D007F2032 /* CameraView.swift in Sources */,
+				6496314D2B8EF3D400CFB220 /* TagCollectionView.swift in Sources */,
 				644E5C142B7DDA3600AD4868 /* AppDelegate.swift in Sources */,
 				644E5C162B7DDA3600AD4868 /* SceneDelegate.swift in Sources */,
 				64E2973E2B88BBFF00E75639 /* UIApplication + ex.swift in Sources */,
@@ -379,6 +418,7 @@
 				641E19272B7DE9D40041DFA3 /* PasscodePresenter.swift in Sources */,
 				646A84152B846989007F2032 /* StringProtocol + ex.swift in Sources */,
 				648A29EF2B7F374C006F534B /* UIStackView + ex.swift in Sources */,
+				6471166E2B9590A0004450A7 /* FavoriteCell.swift in Sources */,
 				64787F3F2B8325CE004A934A /* KeychainManager.swift in Sources */,
 				646A842D2B847A4A007F2032 /* MainScreenPresenter.swift in Sources */,
 			);

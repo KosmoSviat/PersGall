@@ -23,40 +23,47 @@ class PostDate: Identifiable {
     static func getMockData() -> [PostDate] {
         [
             PostDate(items: [
-            PostItem(photos: ["img1", "img2"],
-                     comments: nil,
-                     tags: ["Home", "Nature"],
-                     description: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit"]),
-            PostItem(photos: ["img3"],
-                     comments: nil,
-                     tags: ["Home", "Nature", "Education", "Work", "Game"],
-                     description: ["tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"]),
-            PostItem(photos: ["img4"],
-                     comments: nil,
-                     tags: ["Home", "Nature", "Education", "Work", "Game"],
-                     description: ["tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"])
+                PostItem(photos: ["img1", "img2"],
+                         comments: nil,
+                         tags: ["Home", "Nature"],
+                         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                         date: Date()),
+                PostItem(photos: ["img3"],
+                         comments: nil,
+                         tags: ["Home", "Nature", "Education", "Work", "Game"],
+                         description: "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                         date: Date()),
+                PostItem(photos: ["img4"],
+                         comments: nil,
+                         tags: ["Home", "Nature", "Education", "Work", "Game"],
+                         description: "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                         date: Date()),
             ], date: Date()),
             
             PostDate(items: [
-            PostItem(photos: ["img5", "img6"],
-                     comments: nil,
-                     tags: ["Home", "Nature"],
-                     description: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit"]),
-            PostItem(photos: ["img7"],
-                     comments: nil,
-                     tags: ["Home", "Nature", "Education", "Work", "Game"],
-                     description: ["tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"])
+                PostItem(photos: ["img5", "img6"],
+                         comments: nil,
+                         tags: ["Home", "Nature"],
+                         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                         date: Date()),
+                PostItem(photos: ["img7"],
+                         comments: nil,
+                         tags: ["Home", "Nature", "Education", "Work", "Game"],
+                         description: "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                         date: Date())
             ], date: Date().addingTimeInterval(-86400)),
             
             PostDate(items: [
-            PostItem(photos: ["img8", "img9"],
-                     comments: nil,
-                     tags: ["Home", "Nature"],
-                     description: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit"]),
-            PostItem(photos: ["img10"],
-                     comments: nil,
-                     tags: ["Home", "Nature", "Education", "Work", "Game"],
-                     description: ["tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"])
+                PostItem(photos: ["img8", "img9"],
+                         comments: nil,
+                         tags: ["Home", "Nature"],
+                         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                         date: Date()),
+                PostItem(photos: ["img10"],
+                         comments: nil,
+                         tags: ["Home", "Nature", "Education", "Work", "Game"],
+                         description: "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                         date: Date())
             ], date: Date().addingTimeInterval(-172800))
         ]
     }
@@ -68,15 +75,42 @@ class PostItem: Identifiable {
     let photos: [String]
     let comments: [Comment]?
     let tags: [String]?
-    let description: [String]?
-    let isFavorite: Bool = false
+    let description: String?
+    let isFavorite: Bool
+    let date: Date
+    
+    // MARK: - Methods
+    static func getMockItems() -> [PostItem] {
+        [
+            PostItem(photos: ["img1", "img2"],
+                     comments: nil,
+                     tags: ["Home", "Природа"],
+                     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                     isFavorite: true,
+                     date: Date()),
+            PostItem(photos: ["img2", "img3"],
+                     comments: nil,
+                     tags: ["Home", "Природа"],
+                     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                     isFavorite: true,
+                     date: Date()),
+            PostItem(photos: ["img3", "img1"],
+                     comments: nil,
+                     tags: ["Home", "Природа"],
+                     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                     isFavorite: true,
+                     date: Date())
+        ]
+    }
     
     // MARK: - Init
-    init(photos: [String], comments: [Comment]?, tags: [String]?, description: [String]?) {
+    init(photos: [String], comments: [Comment]?, tags: [String]?, description: String?, isFavorite: Bool = false, date: Date) {
         self.photos = photos
         self.comments = comments
         self.tags = tags
         self.description = description
+        self.isFavorite = isFavorite
+        self.date = date
     }
 }
 

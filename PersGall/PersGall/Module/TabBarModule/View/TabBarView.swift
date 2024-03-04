@@ -45,6 +45,10 @@ class TabBarView: UITabBarController {
             view.addSubview(tabButton)
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        selectedIndex = 2
+    }
 }
 
 extension TabBarView: TabBarViewProtocol {
@@ -56,7 +60,7 @@ extension TabBarView: TabBarViewProtocol {
 extension TabBarView {
     private func createTabBarButton(icon: UIImage, tag: Int, offsetX: Double,
                                     isBigButton: Bool = false) -> UIButton {
-        let buttonSize = isBigButton ? 60.0 : 25.0
+        let buttonSize = isBigButton ? 60.0 : 30.0
         let heightValue = view.frame.height - (buttonSize + (isBigButton ? 44 : 62))
         let button = UIButton(primaryAction: selectedItem)
         button.setBackgroundImage(icon, for: .normal)
